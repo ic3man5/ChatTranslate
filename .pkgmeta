@@ -1,0 +1,5 @@
+package-as: ChatTranslate
+
+ignore:
+  - tools
+  - README.md

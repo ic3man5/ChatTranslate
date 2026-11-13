@@ -4,7 +4,7 @@ Words come from a 50k conversational frequency list (OpenSubtitles) plus the
 OPUS-MT model's vocabulary; phrases are the most common 2-4 word sequences in
 Tatoeba's everyday Spanish sentences. Each is translated with the offline model.
 Hand-written entries below override it for chat phrases, slang and small words
-the model glosses badly out of context. Writes ChatTranslate/Dict*.lua and the TOC.
+the model glosses badly out of context. Writes Dict.lua and the TOC's file list.
 """
 
 import bz2
@@ -19,7 +19,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 MODEL_DIR = HERE / "models" / "translate-es_en-1_9"
 DATA = HERE / "data"
-OUT_DIR = HERE / "ChatTranslate"
+OUT_DIR = HERE.parent  # the addon lives at the repository root
 MAX_VOCAB = 26000  # model vocabulary is frequency ordered; the tail is mostly word fragments
 MAX_FREQ_WORDS = 40000
 NGRAM_LIMITS = {2: 12000, 3: 8000, 4: 4000}

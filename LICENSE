@@ -20,5 +20,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-This license covers the code. The generated dictionary, ChatTranslate/Dict.lua,
-is licensed separately under CC BY-SA 4.0; see ChatTranslate/LICENSE-Dictionary.txt.
+This license covers the code. The generated dictionary, Dict.lua, is licensed
+separately under CC BY-SA 4.0; see LICENSE-Dictionary.txt.

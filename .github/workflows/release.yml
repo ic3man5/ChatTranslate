@@ -1,0 +1,23 @@
+# Pushing a tag like v0.3.0 packages the addon and publishes it to GitHub Releases,
+# and to CurseForge once the TOC has an X-Curse-Project-ID and the CF_API_KEY secret is set.
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: BigWigsMods/packager@v2
