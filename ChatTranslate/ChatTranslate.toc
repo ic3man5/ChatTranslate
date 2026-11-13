@@ -1,0 +1,11 @@
+## Interface: 16001, 16002, 16003, 16100, 16101, 16200
+## Title: ChatTranslate
+## Notes: Adds an English translation after Spanish chat messages.
+## Author: ic3man5
+## Version: 0.2.0
+## X-Website: https://github.com/ic3man5/ChatTranslate
+## X-License: MIT (code), CC BY-SA 4.0 (dictionary)
+## SavedVariables: ChatTranslateLog, ChatTranslateSettings
+
+Dict.lua
+ChatTranslate.lua
