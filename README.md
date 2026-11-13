@@ -89,7 +89,7 @@ Bump `## Version` in `ChatTranslate.toc`, commit, and push a matching tag
 (`git tag -a v0.3.0 -m v0.3.0 && git push --follow-tags`). The Release workflow
 packages the addon with the [BigWigs packager](https://github.com/BigWigsMods/packager)
 and publishes it to GitHub Releases, and to CurseForge when the TOC has an
-`X-Curse-Project-ID` and the repository has a `CF_API_KEY` secret.
+`X-Curse-Project-ID` and the repository has a `CF_API_TOKEN` secret.
 
 ## License
 
